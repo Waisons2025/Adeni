@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Adeni Tea Room • Careers for Baristas</title>
+  <meta name="description" content="Join Adeni Tea Room. We’re hiring self-starter baristas who communicate well and love being part of a team.">
+  <link rel="icon" type="image/png" href="./adeni-logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preload" as="image" href="./exterior.webp">
+  <style>
+    html { font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; scroll-behavior: smooth; }
+    .text-adeni-gold { color: #C0A05B; }
+    .bg-adeni-gold { background-color: #C0A05B; }
+    .img-fallback { background:#f3f4f6; display:block; }
+  </style>
+  <script>
+    function imgFallback(img, label){
+      img.classList.add('img-fallback');
+      img.alt = (label || 'Missing image') + ' (not found)';
+      img.removeAttribute('src');
+    }
+  </script>
+</head>
+<body class="min-h-screen bg-neutral-50 text-neutral-900">
+  <header class="sticky top-0 z-40 backdrop-blur bg-white/70 border-b border-neutral-200">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <img src="./adeni-logo.png" alt="Adeni Tea Room Logo" class="h-10 w-auto" onerror="imgFallback(this,'logo')">
+        <div class="font-semibold tracking-tight">Adeni Tea Room • Careers</div>
+      </div>
+      <nav class="hidden md:flex items-center gap-6 text-sm" aria-label="Primary">
+        <a href="#benefits" class="hover:text-adeni-gold">Why Adeni</a>
+        <a href="#culture" class="hover:text-adeni-gold">Culture</a>
+        <a href="#apply" class="hover:text-adeni-gold">Apply</a>
+      </nav>
+      <a href="#apply" class="inline-flex items-center rounded-xl bg-adeni-gold px-4 py-2 text-white text-sm font-medium shadow hover:bg-yellow-600/90">Apply Now</a>
+    </div>
+  </header>
+
+  <section class="relative isolate">
+    <div class="absolute inset-0 -z-10">
+      <img fetchpriority="high" loading="eager" decoding="async"
+           src="./exterior.webp"
+           alt="Adeni Tea Room exterior sign"
+           class="h-full w-full object-cover"
+           onerror="imgFallback(this,'hero')">
+      <div class="absolute inset-0 bg-black/60"></div>
+    </div>
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-24 md:py-32 text-white">
+      <div class="max-w-3xl">
+        <h1 class="text-4xl md:text-6xl font-extrabold leading-tight">Now Hiring Baristas & Shift Leads</h1>
+        <p class="mt-6 text-lg md:text-xl text-neutral-200">We’re building a team of <span class="font-semibold">self-starters</span>, <span class="font-semibold">excellent communicators</span>, and <span class="font-semibold">true team players</span> to serve authentic Yemeni tea and specialty coffee.</p>
+        <div class="mt-8 flex flex-col sm:flex-row gap-4">
+          <a href="#apply" class="inline-flex items-center rounded-2xl bg-adeni-gold px-6 py-3 text-base font-semibold shadow hover:bg-yellow-600/90">Apply in 60 Seconds</a>
+          <a href="#benefits" class="inline-flex items-center rounded-2xl bg-white/10 px-6 py-3 text-base font-semibold border border-white/20 hover:bg-white/20">See Benefits</a>
+        </div>
+        <div class="mt-10 grid grid-cols-2 sm:grid-cols-4 gap-4 text-sm text-neutral-200">
+          <div class="rounded-xl bg-white/10 border border-white/10 px-3 py-2 text-center">Tips + Shift Drinks</div>
+          <div class="rounded-xl bg-white/10 border border-white/10 px-3 py-2 text-center">Paid Training</div>
+          <div class="rounded-xl bg-white/10 border border-white/10 px-3 py-2 text-center">Growth Path</div>
+          <div class="rounded-xl bg-white/10 border border-white/10 px-3 py-2 text-center">Flexible Scheduling</div>
+          <div class="rounded-xl bg-white/10 border border-white/10 px-3 py-2 text-center">Authentic Culture</div>
+          <div class="rounded-xl bg-white/10 border border-white/10 px-3 py-2 text-center">Team Bonuses</div>
+          <div class="rounded-xl bg-white/10 border border-white/10 px-3 py-2 text-center">Safe & Clean</div>
+          <div class="rounded-xl bg-white/10 border border-white/10 px-3 py-2 text-center">Downtime Projects</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="benefits" class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16">
+    <div class="grid lg:grid-cols-2 gap-12 items-center">
+      <div>
+        <h2 class="text-3xl md:text-4xl font-bold tracking-tight">Why work at Adeni</h2>
+        <p class="mt-4 text-neutral-600">We celebrate hospitality, craftsmanship, and Yemeni tradition. If you like fast-paced service and real growth, you’ll feel at home here.</p>
+        <ul class="mt-6 space-y-4">
+          <li class="flex items-start gap-3"><span class="mt-1 inline-flex h-6 w-6 items-center justify-center rounded-full bg-yellow-200/30 text-adeni-gold">✓</span><div><div class="font-semibold">Clear path to lead</div><div class="text-neutral-600">Level up from Barista → Senior Barista → Shift Lead with performance coaching.</div></div></li>
+          <li class="flex items-start gap-3"><span class="mt-1 inline-flex h-6 w-6 items-center justify-center rounded-full bg-yellow-200/30 text-adeni-gold">✓</span><div><div class="font-semibold">Fair scheduling</div><div class="text-neutral-600">Consistent hours and flexible swaps. Weekday or weekend focus available.</div></div></li>
+          <li class="flex items-start gap-3"><span class="mt-1 inline-flex h-6 w-6 items-center justify-center rounded-full bg-yellow-200/30 text-adeni-gold">✓</span><div><div class="font-semibold">Training & tastings</div><div class="text-neutral-600">Dial espresso, steam milk art, and master Adeni tea brewing with cuppings.</div></div></li>
+          <li class="flex items-start gap-3"><span class="mt-1 inline-flex h-6 w-6 items-center justify-center rounded-full bg-yellow-200/30 text-adeni-gold">✓</span><div><div class="font-semibold">Perks</div><div class="text-neutral-600">Shift drink, staff discounts, tip pooling, and occasional team meals.</div></div></li>
+        </ul>
+      </div>
+      <div class="grid grid-cols-2 gap-4">
+        <img loading="lazy" decoding="async" src="./seating.webp" alt="Calm seating area at Adeni" class="rounded-2xl object-cover h-44 md:h-56 w-full" onerror="imgFallback(this,'interior 1')">
+        <img loading="lazy" decoding="async" src="./counter.webp" alt="Front counter and menu displays" class="rounded-2xl object-cover h-44 md:h-56 w-full mt-6" onerror="imgFallback(this,'interior 2')">
+        <img load
