@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Application Submitted • Adeni Tea Room</title>
+  <meta name="description" content="Thank you for applying to Adeni Tea Room. Your application was submitted successfully." />
+
+  <!-- Favicon & Font -->
+  <link rel="icon" type="image/png" href="./adeni-logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com" defer></script>
+
+  <!-- Preload logo for snappier paint -->
+  <link rel="preload" as="image" href="./adeni-logo.png" />
+
+  <style>
+    html { font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; }
+    .text-adeni-gold { color: #C0A05B; }
+    .bg-adeni-gold { background-color: #C0A05B; }
+  </style>
+</head>
+<body class="min-h-[100svh] bg-neutral-50 flex items-center justify-center px-4">
+  <main class="bg-white rounded-2xl shadow-lg p-8 max-w-md w-full text-center border border-neutral-200">
+    <img src="./adeni-logo.png" alt="Adeni Tea Room" class="h-10 w-auto mx-auto mb-3" />
+    <h1 class="text-2xl font-bold text-adeni-gold">Thank You!</h1>
+    <p class="mt-4 text-neutral-700">
+      Your application has been submitted successfully. Our team will review your details and contact you soon.
+    </p>
+
+    <a href="./"
+       class="mt-6 inline-block rounded-xl bg-neutral-900 text-white px-6 py-3 font-semibold shadow transition
+              hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-neutral-900"
+       aria-label="Return to homepage">
+      Return Home
+    </a>
+  </main>
+</body>
+</html>
